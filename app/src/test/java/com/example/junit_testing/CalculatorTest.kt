@@ -9,8 +9,7 @@ class CalculatorTest {
     val calculator = Calculator()
 
     @Test
-    fun add() {
-        val expected = 15
-        assertEquals(expected, calculator.add(5, 10))
+    fun `Test calculator can subtract two numbers`() {
+        assertEquals(10, calculator.sub(20, 10))
     }
 }
